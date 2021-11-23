@@ -8,21 +8,17 @@ http://60.173.254.126:8888/
 
 ### 使用方式
 
-双击下图中的“运行.bat“，在弹出的窗口中输入要获取的小区网页地址后的数字。如下图所示361，输入完后回车即可等待抓取数据并生成excel文件。
+双击下图中的“运行.bat“，在弹出的窗口中输入要获取的小区网页地址后的数字。如下图所示361，输入完后回车即可等待抓取数据并生成excel文件。由于网站本身做了防止快速请求的功能，因此做了延迟请求，每次请求间隔4秒。最终生成的excel如下图所示。
 
 ![](https://raw.githubusercontent.com/xbingo2/readmeImg/main/crxNewTabImg/yh4.png)
-
-
 
 ![](https://raw.githubusercontent.com/xbingo2/readmeImg/main/crxNewTabImg/yh2.png)
 
 ![](https://raw.githubusercontent.com/xbingo2/readmeImg/main/crxNewTabImg/yh5.png)
 
+![](https://raw.githubusercontent.com/xbingo2/readmeImg/main/crxNewTabImg/yh6.png)
 
-
-
-
-
+![](https://raw.githubusercontent.com/xbingo2/readmeImg/main/crxNewTabImg/yh7.png)
 
 ### 工具地址
 
