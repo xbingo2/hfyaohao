@@ -11,16 +11,21 @@ import org.jsoup.select.Elements;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class YaoHao {
 
 
     public static void main(String[] args) {
-        long sleepTime = 2000;
-        String id = args[0];
+
+        System.out.print("请输入项目url：");
+        Scanner sc = new Scanner(System.in);
+        String id = sc.nextLine();
         if (StringUtils.isBlank(id)) {
             return;
         }
+
+        long sleepTime = 2000;
         final String baseUrl = "http://60.173.254.126:8888";
         final String rsaUrl = baseUrl + "/details/getrsa/";
         final String detailUrl = baseUrl + "/details/house/";
