@@ -1,6 +1,7 @@
 package com.cn.xbingo.model;
 
 import com.alibaba.excel.annotation.ExcelProperty;
+import com.alibaba.excel.util.StringUtils;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -45,5 +46,16 @@ public class Yh implements Serializable {
     @ExcelProperty("公摊面积")
     private String lbJoinArea;
 
-    
+    @ExcelProperty("总价")
+    private Double total;
+
+    public Double getTotal() {
+        if (StringUtils.isNotBlank(this.iPrice) && this.iPrice.contains("元/㎡")
+                && StringUtils.isNotBlank(this.lbBuildArea) && this.lbBuildArea.contains("㎡")) {
+            return Double.parseDouble(this.iPrice.replace("元/㎡", "")) * Double.parseDouble(this.lbBuildArea.replace("㎡", ""));
+        }
+        else {
+            return null;
+        }
+    }
 }
