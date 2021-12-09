@@ -16,7 +16,7 @@
         <artifactId>maven-assembly-plugin</artifactId>
         <configuration>
           <appendAssemblyId>false</appendAssemblyId>
-          <finalName>yaohao</finalName>
+          <finalName>hffj</finalName>
           <descriptorRefs>
             <!-- 将依赖的jar包中的class文件打进生成的jar包-->
             <descriptorRef>jar-with-dependencies</descriptorRef>
@@ -25,7 +25,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <!-- 有Main函数的类-->
-              <mainClass>com.cn.xbingo.YaoHao</mainClass>
+              <mainClass>com.cn.xbingo.Main</mainClass>
             </manifest>
           </archive>
         </configuration>
